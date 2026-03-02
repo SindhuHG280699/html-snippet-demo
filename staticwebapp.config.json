@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "route": "/dashboard",
+      "rewrite": "/dashboard.html",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/",
+      "rewrite": "/index.html",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
+}
